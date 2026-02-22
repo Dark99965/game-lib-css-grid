@@ -3,6 +3,12 @@ body {
     background-color: black;
     color: white;
 }
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+
+
 #title {
     text-align: center;
 }
