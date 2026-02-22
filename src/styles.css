@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
@@ -19,7 +23,8 @@ a:link, a:visited, a:hover, a:active {
 }
 .game {
     height: 200px; width: 200px;
+    
 }
-#gameimg {
+img {
     height: 150px;
 }
