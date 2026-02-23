@@ -24,6 +24,9 @@ a:link, a:visited, a:hover, a:active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 .game {
     box-sizing: border-box;
@@ -36,8 +39,12 @@ a:link, a:visited, a:hover, a:active {
 }
 .game:hover {
     border: 2px solid red;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 img {
+    width: 100%;
     height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
