@@ -1,6 +1,10 @@
-* {
+p {
+    text-align: center;
+    font-size: large;
+}
+div {
   box-sizing: border-box;
-  
+
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,12 +22,21 @@ a:link, a:visited, a:hover, a:active {
 }
 .games {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minma(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 .game {
-    height: 200px; width: 200px;
-    
+    box-sizing: border-box;
+    height: auto; width: auto;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 20px;
+    transition: border 0.3s ease, transform 0.3s ease;
+
+}
+.game:hover {
+    border: 2px solid red;
+    transform: scale(1.2);
 }
 img {
     height: 150px;
